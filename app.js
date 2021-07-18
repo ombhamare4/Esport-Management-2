@@ -28,7 +28,7 @@ MongoClient.connect(url, { useUnifiedTopology: true }).then(client => {
     //     client.close();
     // });
 
-    app.post('/signup', (req, res) => {
+    app.post('/signupUser', (req, res) => {
         usersCollection.insertOne({ teamName: req.body.teamName, 
             password: req.body.password, 
             totalTeamFinish:{type: Number, default: 0}, 
