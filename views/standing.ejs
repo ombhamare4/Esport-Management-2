@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tournament</title>
+</head>
+
+<body class="bg-gray-800">
+    <nav class="bg-gray-800 text-pink-500 text-2xl ">
+        <div class="px-8 py-3 max-w mx-auto  border-pink-500">
+            <div class="flex justify-between">
+                <div class="flex space-x-5">
+                    <div>
+                        <a class="flex items-center py-4" herf="#">
+                            <svg class="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                <path
+                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                                </path>
+                            </svg>
+                            <span>Esport</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a class="py-4  hover:text-white transition duration-500" href="#">Home</a>
+                        <a class="py-4  hover:text-white transition duration-500" href="#">Tournament</a>
+                        <a class="py-4  hover:text-white transition duration-500" href="#">Scrims</a>
+                        <a class="py-4  hover:text-white transition duration-500" href="#">Standings</a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <!-- <script type="script.js"></script> -->
+                    <button id="toggle-button" onClick="myFunction" class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="px-8 max-w mx-auto mobile-menu hidden">
+            <a class="py-4 max-w mx-auto block border-b border-pink-500 text-center hover:text-white transition duration-500"
+                href="#">Home</a>
+            <a class="py-4 max-w mx-auto block border-b border-pink-500 text-center hover:text-white transition duration-500"
+                href="#">Tournament</a>
+            <a class="py-4 max-w mx-auto block border-b border-pink-500 text-center hover:text-white transition duration-500"
+                href="#">Scrims</a>
+            <a class="py-4 max-w mx-auto block border-b border-pink-500 text-center hover:text-white transition duration-500"
+                href="#">Standings</a>
+        </div>
+        <script type="text/javascript">
+            var btn = document.getElementById("btn");
+            var menu = document.getElementById("mobile-menu");
+            btn.addEventListener("click", () => {
+                menu.classList.toggle('hidden');
+            });
+        </script>
+    </nav>
+    <main class="text-center">
+        <div class="text-white p-10">
+            <div class="flex flex-wrap p-5 ">
+                <div class="w-2/3 p-5 border border-white">
+                    <div class="flex justify-evenly border border-white">
+                        <h1 class="text-center">Rank</h1>
+                        <h1 class="text-center">Team Name</h1>
+                        <h1 class="text-center">WWCD</h1>
+                        <h1 class="text-center">Total Finishes</h1>
+                    </div>
+                    <ul >
+                        <li class="text-cente">
+                            <div class="flex justify-evenly border border-white">
+                                <span class="text-center">1</span>
+                                <span class="text-center">Hornet</span>
+                                <span class="text-center">WWCD</span>
+                                <span class="text-center">99</span>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="w-1/3 p-5 border border-white">
+                    Players
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
