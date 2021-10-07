@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectId;
-const url = "mongodb+srv://webRubik:test'OR'a'='a'@web-db.qjovo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+// const url = "mongodb+srv://webRubik:<password>@web-db.qjovo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 
 
