@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body class="bg-white">
+    <nav class=" text-purple-500 text-2xl shadow-md ">
+        <div class="px-8 py-3 max-w mx-auto  border-pink-500 ">
+            <div class="flex justify-between">
+                <div class="flex space-x-5">
+                    <div>
+                        <a class="flex items-center py-4" herf="/">
+                            <svg class="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                                <path
+                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                                </path>
+                            </svg>
+                            <span>Esport</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a class="py-4  hover:text-purple-900 transition duration-500" href="#">Home</a>
+                        <a class="py-4  hover:text-purple-900 transition duration-500" href="/tournamet">Tournament</a>
+                        <a class="py-4  hover:text-purple-900 transition duration-500" href="#">Scrims</a>
+                        <a class="py-4  hover:text-purple-900 transition duration-500" href="/standing">Standings</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a class="px-3 py-1  hover:text-purple-900 transition duration-500" href="/login">Login</a>
+                    <a class="px-3 py-1 rounded bg-purple-500 text-gray-800  hover:bg-white transition duration-500 "
+                        href="/signup">Sign up</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <!-- <script type="script.js"></script> -->
+                    <button id="toggle-button" onClick="myFunction" class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="px-8 max-w mx-auto mobile-menu hidden">
+            <a class="py-4 max-w mx-auto block border-b border-pink-500 text-center hover:text-white transition duration-500"
+                href="#">Login</a>
+            <a class="py-4 max-w mx-auto block border-b border-pink-500 text-center hover:text-white transition duration-500"
+                href="#">Sign Up</a>
+            <a class="py-4 max-w mx-auto block border-b border-pink-500 text-center hover:text-white transition duration-500"
+                href="#">Home</a>
+            <a class="py-4 max-w mx-auto block border-b border-pink-500 text-center hover:text-white transition duration-500"
+                href="#">Tournament</a>
+            <a class="py-4 max-w mx-auto block border-b border-pink-500 text-center hover:text-white transition duration-500"
+                href="#">Scrims</a>
+            <a class="py-4 max-w mx-auto block border-b border-pink-500 text-center hover:text-white transition duration-500"
+                href="#">Standings</a>
+        </div>
+        <script type="text/javascript">
+            var btn = document.getElementById("btn");
+            var menu = document.getElementById("mobile-menu");
+            btn.addEventListener("click", () => {
+                menu.classList.toggle('hidden');
+            });
+        </script>
+    </nav>
+    <main class=" text-center h-auto text-purple-500 text-white block text-3xl ">
+        <div class="p-10 md:p-28 max-w  h-full">
+            <h1 class="text-5xl xl:text-8xl mb-5"><span class="text-pink-600">E</span>sport</h1>
+            <h1 class="text-5xl xl:text-8xl mb-5">Management</h1>
+            <p class=" px-13 text-xl xl::text-5xl mb-7">“The team that keeps winning is not the most talented but the most hard-working.”</p>
+            <button class="p-2 rounded transition text-white duration-500 ease-in-out bg-purple-600 hover:bg-purple-700 transform hover:-translate-y-1 hover:scale-110 ...">
+                Explore
+              </button>
+        </div>
+        <!-- <div class=" text-2xl w-auto px-100">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis urna cursus dolor placerat faucibus
+                ultricies et tortor. Nunc egestas leo sodales magna porttitor, aliquam luctus metus pharetra. Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin orci dui,
+                efficitur id purus eget, placerat tincidunt felis. In faucibus pretium augue nec viverra. Quisque quis
+                lacus at felis gravida dictum. Sed pulvinar, diam at pretium egestas, massa est blandit ligula, eget
+                rhoncus lorem enim non eros. Donec varius urna nibh, et vulputate libero sollicitudin non. Etiam rhoncus
+                gravida lacus, in consequat turpis fringilla eu. </h1>
+        </div> -->
+    </main>
+    <middle class="text-center ">
+        <div class="flex flex-wrap  justify-evenly">
+            <div class="mb-5 px-8 xl:px-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 "><h1 class="text-purple-600 text-2xl mb-5">Dashing Players</h1><img class=" w-auto h-auto  " src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZXNwb3J0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="mb-5 px-8 xl:px-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"><h1 class="text-purple-600 text-2xl mb-5">Best Zone</h1><img class=" w-auto h-auto " src="https://images.unsplash.com/photo-1558008258-3256797b43f3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZXNwb3J0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="mb-5 px-8 xl:px-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"><h1 class="text-purple-600 text-2xl mb-5">Best Community</h1><img class=" w-auto h-auto" src="https://images.unsplash.com/photo-1558008258-7ff8888b42b0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGVzcG9ydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="mb-5 px-8 xl:px-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"><h1 class="text-purple-600 text-2xl mb-5">Nice Setup</h1><img class=" w-auto h-auto " src="https://images.unsplash.com/photo-1548686304-637b8e7c663b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGVzcG9ydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="mb-5 px-8 xl:px-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"><h1 class="text-purple-600 text-2xl mb-5">Play WIth Us</h1><img class=" w-auto " src="https://images.unsplash.com/flagged/photo-1580234820596-0876d136e6d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGVzcG9ydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="mb-5 px-8 xl:px-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"><h1 class="text-purple-600 text-2xl mb-5">Best commentator</h1><img class=" w-auto h-auto " src="https://images.unsplash.com/photo-1558008322-ab6d05b143ae?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fGVzcG9ydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="mb-5 px-8 xl:px-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"><h1 class="text-purple-600 text-2xl mb-5">Awsome Arena</h1><img class=" w-auto h-auto " src="https://thumbs.dreamstime.com/b/esport-gaming-olympic-game-event-world-cyber-games-wcg-xi-china-esport-gaming-olympic-game-event-world-cyber-games-154627149.jpg"></div>
+            
+        </div>
+    </middle>
+</body>
+
+</html>
